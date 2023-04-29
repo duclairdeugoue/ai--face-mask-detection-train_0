@@ -21,7 +21,7 @@
 # from imutils import paths
 # import matplotlib.pyplot as plt
 
-from keras.utils.image_utils import ImageDataGenerator
+from keras.preprocessing.image import ImageDataGenerator
 from keras.applications import MobileNetV2
 from keras.layers import AveragePooling2D
 from keras.layers import Dropout
