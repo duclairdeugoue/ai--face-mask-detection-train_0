@@ -1,6 +1,8 @@
 
 # import the necessary packages
-from tensorflow.keras.models import load_model, save_model
+# from tensorflow.keras.models import load_model, save_model
+from keras.models import load_model, save_model
+
 import argparse
 import tf2onnx
 import onnx

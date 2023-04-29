@@ -2,24 +2,44 @@
 # python train_mask_detector.py --dataset dataset
 
 # import the necessary packages
-from tensorflow.keras.preprocessing.image import ImageDataGenerator
-from tensorflow.keras.applications import MobileNetV2
-from tensorflow.keras.layers import AveragePooling2D
-from tensorflow.keras.layers import Dropout
-from tensorflow.keras.layers import Flatten
-from tensorflow.keras.layers import Dense
-from tensorflow.keras.layers import Input
-from tensorflow.keras.models import Model
-from tensorflow.keras.optimizers import Adam
-from tensorflow.keras.applications.mobilenet_v2 import preprocess_input
-from tensorflow.keras.preprocessing.image import img_to_array
-from tensorflow.keras.preprocessing.image import load_img
-from tensorflow.keras.utils import to_categorical
+# from tensorflow.keras.preprocessing.image import ImageDataGenerator
+# from tensorflow.keras.applications import MobileNetV2
+# from tensorflow.keras.layers import AveragePooling2D
+# from tensorflow.keras.layers import Dropout
+# from tensorflow.keras.layers import Flatten
+# from tensorflow.keras.layers import Dense
+# from tensorflow.keras.layers import Input
+# from tensorflow.keras.models import Model
+# from tensorflow.keras.optimizers import Adam
+# from tensorflow.keras.applications.mobilenet_v2 import preprocess_input
+# from tensorflow.keras.preprocessing.image import img_to_array
+# from tensorflow.keras.preprocessing.image import load_img
+# from tensorflow.keras.utils import to_categorical
+# from sklearn.preprocessing import LabelBinarizer
+# from sklearn.model_selection import train_test_split
+# from sklearn.metrics import classification_report
+# from imutils import paths
+# import matplotlib.pyplot as plt
+
+from keras.utils.image_utils import ImageDataGenerator
+from keras.applications import MobileNetV2
+from keras.layers import AveragePooling2D
+from keras.layers import Dropout
+from keras.layers import Flatten
+from keras.layers import Dense
+from keras.layers import Input
+from keras.models import Model
+from keras.optimizers import Adam
+from keras.applications.mobilenet_v2 import preprocess_input
+from keras.utils.image_utils import img_to_array
+from keras.utils.image_utils import load_img
+from keras.utils import to_categorical
 from sklearn.preprocessing import LabelBinarizer
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report
 from imutils import paths
 import matplotlib.pyplot as plt
+
 import numpy as np
 import argparse
 import os
